@@ -1,0 +1,349 @@
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.carousel-caption{
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+
+/* -- section  -- */
+
+.section {
+  position: relative;
+}
+
+.md-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.sm-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* navbar */
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+nav.stroke ul li a{
+  position: relative;
+}
+nav.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.stroke .active {
+  border-bottom:  2px solid #555
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+.navbar button:focus {
+  outline: none;
+}
+
+
+.animated-icon {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+.animated-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.animated-icon span {
+  background: #aaa;
+}
+
+.animated-icon span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.animated-icon span:nth-child(2) {
+  top: 10px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.animated-icon span:nth-child(3) {
+  top: 20px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.animated-icon.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 0px;
+  left: 8px;
+}
+
+.animated-icon.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.animated-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 21px;
+  left: 8px;
+}
+
+/* --------------- */
+/* Products Screen */
+/* --------------- */
+
+
+.custom-container
+{
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%,75%); */
+    width: 1000px;
+    height: 500px;
+    display: flex;
+}
+
+.custom-container .box
+{
+    position: relative;
+    height: 500px;
+    width: 250px;
+    background: #ccc;
+    transition: 0.5s;
+}
+
+.custom-container .box .thumbs
+{
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.custom-container .box .thumbs img
+{
+    width: 100%;
+}
+
+.custom-container .box .detials
+{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.custom-container .box:nth-child(odd) .thumbs
+{
+    bottom: 0;
+    left: 0;
+}
+
+.custom-container .box:nth-child(even) .detials
+{
+    bottom: 0;
+    left: 0;
+}
+
+.custom-container .box .detials .content
+{
+    position: absolute;
+    top: calc(50% - 16px);
+    transform: translateY(-50%);
+    padding: 20%;
+    text-align: center;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.custom-container .box:hover .detials .content
+{
+    top:calc(50%);
+}
+
+.custom-container .box:hover
+{
+    transform: scale(1.1);
+    z-index: 1;
+    box-shadow: 0xp 0px 0px 5px;
+}
+
+.custom-container .box .detials .content a
+{
+    display: inline-block;
+}
+
+@media (max-width : 1000px)
+{
+    .custom-container
+    {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .custom-container .box
+    {
+        left: 0%;
+        top: 0%;
+        height: 250px;
+    }
+    .custom-container .box .thumbs
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 760px)
+{
+    .custom-container
+    {
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        box-sizing: border-box;
+        display:initial;
+    }
+    .custom-container .box
+    {
+        left: 0%;
+        top: 0%;
+        height: 250px;
+        width: 50%;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 480px)
+{
+    .custom-container
+    {
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        box-sizing: border-box;
+        display:initial;
+        /* top:75%;
+        left: 50%; */
+    }
+    .custom-container .box
+    {
+        left: 0%;
+        top: 0%;
+        height: 250px;
+        width: 100%;
+        float: none;
+    }
+}
+
+.custom-container .box:nth-child(1)
+{
+    background-color: aqua;
+}
+
+.custom-container .box:nth-child(2)
+{
+    background-color:blueviolet;
+}
+
+.custom-container .box:nth-child(3)
+{
+    background-color: rgb(218, 56, 78);
+}
+
+.custom-container .box:nth-child(4)
+{
+    background-color: rgb(198, 250, 10);
+}
+
+/* --------------- */
+/* Products Screen */
+/* --------------- */
