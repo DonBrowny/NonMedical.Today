@@ -244,6 +244,7 @@ nav.stroke .active {
   width: 100%;
   height: 250px;
   overflow: hidden;
+  background-color: #343a40!important;
 }
 
 .custom-container .box:nth-child(odd) .thumbs {
@@ -264,6 +265,14 @@ nav.stroke .active {
   text-align: center;
   box-sizing: border-box;
   transition: 0.5s;
+  color: white;
+}
+.custom-container .box .detials .content h3{
+  color: #e3e3e3;
+}
+.custom-container .box .detials .content i
+{
+  font-size: 36px;
 }
 
 .custom-container .box:hover .detials .content {
@@ -420,3 +429,12 @@ nav.stroke .active {
 }
 
 /* Contact */
+
+/*  modals */
+
+.coupon-modal
+{
+  border-radius: 15px;
+  border: 5px dotted #bbb;
+  margin: 0 auto;
+}
