@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -52,7 +53,7 @@
             </a>
             <!-- NavBar -->
             <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark stroke">
-                <a class="navbar-brand" href="#">LOGO</a>
+                <a class="navbar-brand" href="#"><img src="images/Logo.jpeg">  non medical.today</a>
                 <button id="toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarSupportedContent20"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <div class="animated-icon">
@@ -71,14 +72,14 @@
                             <a class="nav-link" href="#products">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#request">Request</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
-    <div id="products" class="custom-container md-padding">
+    <div id="products" class="custom-container md-padding mx-auto">
         <div class="box">
             <div class="thumbs">
                 <img src="http://placehold.it/350x350" />
@@ -132,155 +133,203 @@
     <!-- Product information modals-->
     <div class="modal fade animated bounce" id="myModal">
         <div class="modal-dialog  modal-lg">
-          <div class="modal-content">
-      
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title">Guaranteed Plan</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-      
-            <!-- Modal body -->
-            <div class="modal-body">
-                <p>Offer your clients ages 40 to 79 an exceptional combination of guaranteed protection with sum insured up to $50,000 
-                    in Specialty Life Insurance's Guaranteed Protection Plan. Under Guaranteed Protection Plan, applicants can qualify 
-                    instantly for coverage as long as they meet the eligibility criteria for the plan. There are no medicals or health 
-                    questions required for full coverage,and a policy may be issued the same day as your client applies.</p>
-                <div class="card">
-                    <div class="card-header">
-                      <a class="collapsed card-link" data-toggle="collapse" href="#collapseOne">
-                            Eligibility
-                      </a>
-                    </div>
-                    <div id="collapseOne" class="collapse" data-parent="#accordion">
-                      <div class="card-body">
-                            There are two requirements to qualify for up to $50,000 in coverage under Guaranteed Protection: 
+            <div class="modal-content">
 
-                            Your client is aged 40 to 79; and
-                            Your client has a permanent Canadian address, as evidence of Canadian residency.
-                            Your client may be eligible to buy this policy even if:
-                            <ul>
-                                <li>Your client has been deferred, postponed, or declined insurance for any reason;</li>
-                                <li>Your client has past health issues that would lead to a deferral or decline under traditional plans; or</li>
-                                <li>Your client is a newly landed immigrant or otherwise not a Canadian citizen</li>
-                            </ul>
-                      </div>
-                    </div>
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Guaranteed Plan</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-                <div class="card">
-                    <div class="card-header">
-                      <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                            Coverage
-                      </a>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p>Offer your clients ages 40 to 79 an exceptional combination of guaranteed protection with sum insured
+                        up to $50,000 in Specialty Life Insurance's Guaranteed Protection Plan. Under Guaranteed Protection
+                        Plan, applicants can qualify instantly for coverage as long as they meet the eligibility criteria
+                        for the plan. There are no medicals or health questions required for full coverage,and a policy may
+                        be issued the same day as your client applies.</p>
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseOne">
+                                Eligibility
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                There are two requirements to qualify for up to $50,000 in coverage under Guaranteed Protection: Your client is aged 40 to
+                                79; and Your client has a permanent Canadian address, as evidence of Canadian residency.
+                                Your client may be eligible to buy this policy even if:
+                                <ul>
+                                    <li>Your client has been deferred, postponed, or declined insurance for any reason;</li>
+                                    <li>Your client has past health issues that would lead to a deferral or decline under traditional
+                                        plans; or</li>
+                                    <li>Your client is a newly landed immigrant or otherwise not a Canadian citizen</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                      <div class="card-body">
-                            Your clients can apply for $1,000 and up to $50,000 of coverage without any health questions.
-                            <br/>
-                            During the first two years of coverage, the policy benefit is equal to the sum of all premiums paid plus 3% simple interest. After this two year period, full benefits are payable equal to the sum insured.
-                        
-                      </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                Coverage
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                Your clients can apply for $1,000 and up to $50,000 of coverage without any health questions.
+                                <br/> During the first two years of coverage, the policy benefit is equal to the sum of all premiums
+                                paid plus 3% simple interest. After this two year period, full benefits are payable equal
+                                to the sum insured.
+
+                            </div>
+                        </div>
                     </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                Benefits
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                <b>Guaranteed acceptance </b>- There is no medical underwriting, ensuring all applicants who
+                                meet the age and residency requirements are covered.
+                                <br/>
+                                <b>Coverage up to $50,000 </b>- Industry-leading coverage amounts give your clients the flexibility
+                                to cover liabilities with a tax-free death benefit.
+                                <br/>
+                                <b>No citizenship required</b> - The life insured needs to be a permanent Canadian resident
+                                to qualify, making this plan a suitable fit for applicants without Canadian citizenship or
+                                who are proceeding on the path to Canadian citizenship.
+                                <br/>
+                                <b>Instant issue </b>- Specialty Life Insurance's fast application process can be completed
+                                entirely online, and you can provide your applicants with an issued policy in as little as
+                                one business day.
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="card">
-                    <div class="card-header">
-                      <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                        Benefits
-                      </a>
-                    </div>
-                    <div id="collapseThree" class="collapse" data-parent="#accordion">
-                      <div class="card-body">
-                            <b>Guaranteed acceptance </b>- There is no medical underwriting, ensuring all applicants who meet the age and residency requirements are covered.
-                            <br/>
-                            <b>Coverage up to $50,000 </b>- Industry-leading coverage amounts give your clients the flexibility to cover liabilities with a tax-free death benefit.
-                            <br/>
-                            <b>No citizenship required</b> - The life insured needs to be a permanent Canadian resident to qualify, making this plan a suitable fit for applicants without Canadian citizenship or who are proceeding on the path to Canadian citizenship.
-                            <br/>
-                            <b>Instant issue </b>- Specialty Life Insurance's fast application process can be completed entirely online, and you can provide your applicants with an issued policy in as little as one business day.
-                      </div>
-                    </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
                 </div>
-        
+
             </div>
-      
-            <!-- Modal footer -->
-            <div class="modal-footer">
-            </div>
-      
-          </div>
         </div>
     </div>
-    
+
     <!-- Icon bars -->
     <div class="icon-bar">
-            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
-            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
-            <a href="#" class="google"><i class="fa fa-google"></i></a> 
-            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+        <a href="#" class="facebook">
+            <i class="fa fa-facebook"></i>
+        </a>
+        <a href="#" class="twitter">
+            <i class="fa fa-twitter"></i>
+        </a>
+        <a href="#" class="google">
+            <i class="fa fa-google"></i>
+        </a>
+        <a href="#" class="linkedin">
+            <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="#" class="youtube">
+            <i class="fa fa-youtube"></i>
+        </a>
     </div>
 
-   <!--  Testimonials -->
+    <!--  Testimonials -->
 
-   <!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-dark text-white">
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="contact container-fluid bg-light text-black md-padding">
         <h2 class="text-center">CONTACT</h2>
         <div class="row">
-          <div class="col-sm-5">
-            <p class="px-5">Contact us and we'll get back to you within 24 hours.</p>
-            <p class="px-5"><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-            <p class="px-5"><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-            <p class="px-5"><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
-          </div>
-          <div class="col-sm-7 slideanim">
-            <div class="row">
-              <div class="col-sm-6 form-group">
-                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-              </div>
-              <div class="col-sm-6 form-group">
-                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-              </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5">
+                <p class="px-5">Contact us and we'll get back to you within 24 hours.</p>
+                <p class="px-5">
+                    <span class="fa fa-map-marker"></span> Chicago, US</p>
+                <p class="px-5">
+                    <span class="fa fa-mobile"></span> +00 1515151515</p>
+                <p class="px-5">
+                    <span class="fa fa-envelope"></span> myemail@something.com</p>
             </div>
-            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-            <div class="row">
-              <div class="col-sm-12 form-group">
-                <button class="btn btn-default pull-right" type="submit">Send</button>
-              </div>
+            <div class="col-sm-5 slideanim">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                <br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-primary pull-right" type="submit">Send</button>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div id="googleMap" style="height:400px;width:100%;"></div>
-   
-<div class="jumbotron" style="margin-bottom:0">
+    </div>
+
+    <div class="jumbotron" style="margin-bottom:0">
         <div class="row">
-                <div class="col-12 col-md px-5 pull-right">
-                  <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
-                  <small class="d-block mb-3 text-muted">© 2017-2018</small>
-                </div>
-                
-                <div class="col-6 col-md">
-                  <h5>Products</h5>
-                  <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Guaranteed Protection Plan</a></li>
-                    <li><a class="text-muted" href="#">Standard Protection Plan</a></li>
-                    <li><a class="text-muted" href="#">Final Expense Plan </a></li>
-                    <li><a class="text-muted" href="#">Critical Illness Plan</a></li>
-                  </ul>
-                </div>
-                <div class="col-6 col-md">
-                  <h5>About</h5>
-                  <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Team</a></li>
-                    <li><a class="text-muted" href="#">Locations</a></li>
-                    <li><a class="text-muted" href="#">Privacy</a></li>
-                    <li><a class="text-muted" href="#">Terms</a></li>
-                  </ul>
-                </div>
-              </div>
-        <p class="text-center"><a class="text-muted" href="http://inforcemedia.ca/">Handcrafted by Inforce Media</a></p>
-      </div>
-      
+            <div class="col-12 col-md px-5 pull-right">
+                <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+                    <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+                    <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+                    <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+                    <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+                    <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+                </svg>
+                <small class="d-block mb-3 text-muted">© 2017-2018</small>
+            </div>
+
+            <div class="col-6 col-md">
+                <h5>Products</h5>
+                <ul class="list-unstyled text-small">
+                    <li>
+                        <a class="text-muted" href="#">Guaranteed Protection Plan</a>
+                    </li>
+                    <li>
+                        <a class="text-muted" href="#">Standard Protection Plan</a>
+                    </li>
+                    <li>
+                        <a class="text-muted" href="#">Final Expense Plan </a>
+                    </li>
+                    <li>
+                        <a class="text-muted" href="#">Critical Illness Plan</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small">
+                    <li>
+                        <a class="text-muted" href="#">Team</a>
+                    </li>
+                    <li>
+                        <a class="text-muted" href="#">Locations</a>
+                    </li>
+                    <li>
+                        <a class="text-muted" href="#">Privacy</a>
+                    </li>
+                    <li>
+                        <a class="text-muted" href="#">Terms</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="text-center">
+            <a class="text-muted" href="http://inforcemedia.ca/">Handcrafted by Inforce Media</a>
+        </p>
+    </div>
+
 
 </body>
 

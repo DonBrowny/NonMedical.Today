@@ -24,12 +24,12 @@ $(function () {
     // });
 
     //Navbar Toggle button animation
-    $('#toggler').click(function () {
-        $('.animated-icon').toggleClass('open');
-    });
-    $('#navbarCollapse').click(function () {
-        $('.animated-icon').toggleClass('open');
-    });
+    $('.navbar-toggler').on('click', function () {
+		$('.animated-icon').toggleClass('open');
+	});
+	$('.nav-link').on('click', function () {
+		$('.animated-icon').toggleClass('open');
+	});	
 
     //scroll event
     //ToDo write the scroll logic here
