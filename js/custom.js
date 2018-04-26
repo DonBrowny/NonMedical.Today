@@ -1,4 +1,17 @@
 $(function () {
+    $(".owl-carousel").owlCarousel({
+        loop:true,
+        items:1,
+        nav:true,
+        loop:true,
+        autoplay:true,
+        animateOut: 'slideOutDown',
+        animateIn: 'flipInX',
+        smartSpeed:450,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
+        navText:['<img width="50" height="50"  src="./images/carousel-arrow-left.png">','<img width="50" height="50" src="./images/carousel-arrow-right.png">']
+    });
     //smooth scroll
     $('body').scrollspy({
         target: '.navbar',
@@ -32,8 +45,15 @@ $(function () {
 	});	
 
     //scroll event
-    //ToDo write the scroll logic here
-    $(window).on('scroll',function(){
-        var vScroll = $(this).scrollTop();
+    $(window).on('scroll', function () {
+        let vScroll = $(this).scrollTop();
+        if(vScroll > 100){
+            $('#nav').removeClass('navbar-custom');
+            $('#nav').addClass('bg-dark');
+        }  
+        else{
+            $('#nav').addClass('navbar-custom');
+            $('#nav').removeClass('bg-dark');
+        }
     });
 });
