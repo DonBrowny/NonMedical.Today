@@ -265,6 +265,7 @@ nav.stroke .active {
 
 .custom-container .box .thumbs img {
   width: 100%;
+  height: 100%;
 }
 
 .custom-container .box .detials {
@@ -272,7 +273,7 @@ nav.stroke .active {
   width: 100%;
   height: 250px;
   overflow: hidden;
-  background-color: #343a40!important;
+  background-color: steelblue!important;
 }
 
 .custom-container .box:nth-child(odd) .thumbs {
@@ -295,7 +296,11 @@ nav.stroke .active {
   transition: 0.5s;
   color: white;
 }
-.custom-container .box .detials .content h3{
+.custom-container .box .detials .content i
+{
+  color: tomato;
+}
+.custom-container .box .detials .content h4,h5{
   color: #e3e3e3;
 }
 .custom-container .box .detials .content i
