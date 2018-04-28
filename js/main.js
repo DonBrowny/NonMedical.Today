@@ -18,7 +18,9 @@ $(document).ready(function()
 
 function goToContact()
 {
-    window.location.href = "home.html#contact"
+    setTimeout(function(){
+        window.location.href = "home.html#contact"
+    },1000); 
 }
 
 function openCollapse(e)
