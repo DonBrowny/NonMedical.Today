@@ -13,7 +13,13 @@ $(document).ready(function()
     
     $('.collapse').on('hidden.bs.collapse', closeCollapse);
     $('.collapse').on('shown.bs.collapse', openCollapse);
+    $('.modalContactUs').on('click',goToContact);
 });
+
+function goToContact()
+{
+    window.location.href = "home.html#contact"
+}
 
 function openCollapse(e)
 {
