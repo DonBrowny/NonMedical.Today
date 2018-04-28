@@ -22,8 +22,6 @@ h6 {
 .home-item {
   height: 100vh;
   min-height: 300px;
-  color: white !important;
-  font-family: tahoma;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -35,7 +33,7 @@ h6 {
 }
 
 .home-caption {
-  color: white !important;
+  color: white;
 }
 .HC
 {
@@ -529,21 +527,35 @@ nav.stroke .active {
 {
   height: 100px;
 }
+element.style {
+}
+
+.cpp-plan dl dt {
+    width: 44%;
+    display: block;
+    float: left;
+    border-top: 1px solid #2a7de9;
+    padding-top: 10px;
+}
+dt {
+    font-weight: 600;
+    color: #333;
+}
+.cpp-plan dl dd {
+  width: 55%;
+  display: block;
+  float: left;
+  padding-bottom: 10px;
+  border-top: 1px solid #2a7de9;
+  padding-top: 10px;
+}
+
+dd {
+  padding-left: 20px;
+}
 
 /* footer */
 
 .footer{
-  background-color: #3c3d41!important;
-}
-
-.footer-copyright{
-  background-color: #333333;
-}
-
-.LinkClass
-{
-  color: white;
-}
-.LinkClass:hover{
-  color: white;
+  background-color: #343a40!important;
 }
