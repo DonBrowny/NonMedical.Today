@@ -22,6 +22,8 @@ h6 {
 .home-item {
   height: 100vh;
   min-height: 300px;
+  color: white !important;
+  font-family: tahoma;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -33,7 +35,7 @@ h6 {
 }
 
 .home-caption {
-  color: white;
+  color: white !important;
 }
 
 .owl-carousel {
