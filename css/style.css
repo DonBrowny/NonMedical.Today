@@ -527,5 +527,17 @@ nav.stroke .active {
 /* footer */
 
 .footer{
-  background-color: #343a40!important;
+  background-color: #3c3d41!important;
+}
+
+.footer-copyright{
+  background-color: #333333;
+}
+
+.LinkClass
+{
+  color: white;
+}
+.LinkClass:hover{
+  color: white;
 }
