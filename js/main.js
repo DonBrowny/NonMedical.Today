@@ -10,6 +10,21 @@ $(document).ready(function()
         $(this).find('h4').html('');
         typeWriter();
     });
+
+    $(window).scroll(function() {
+
+        var winTop = $(this).scrollTop();
+        var $sli = $('#sli');
+        
+        $.each($imgs, function(item) {
+            if($(item).position().top <= winTop)
+                 {
+                     $(item).find().css();
+                 }
+        
+        });
+
+    });
 });
 
 function typeWriter() {
