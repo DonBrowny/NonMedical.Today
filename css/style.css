@@ -22,6 +22,8 @@ h6 {
 .home-item {
   height: 100vh;
   min-height: 300px;
+  color: white !important;
+  font-family: tahoma;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -33,11 +35,7 @@ h6 {
 }
 
 .home-caption {
-  color: white;
-}
-.HC
-{
-  -vendor-animation-delay: 10s;
+  color: white !important;
 }
 
 .owl-carousel {
@@ -522,11 +520,6 @@ nav.stroke .active {
   width: 100%;
   height: 100%;
 }
-
-#portfolioSlide
-{
-  height: 100px;
-}
 element.style {
 }
 
@@ -554,8 +547,25 @@ dd {
   padding-left: 20px;
 }
 
+#portfolioSlide
+{
+  height: 100px;
+}
+
 /* footer */
 
 .footer{
-  background-color: #343a40!important;
+  background-color: #3c3d41!important;
+}
+
+.footer-copyright{
+  background-color: #333333;
+}
+
+.LinkClass
+{
+  color: white;
+}
+.LinkClass:hover{
+  color: white;
 }
