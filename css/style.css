@@ -467,6 +467,20 @@ nav.stroke .active {
   border: 5px dotted #bbb;
   margin: 0 auto;
 }
+.modalContactUs
+{
+  margin-left: 5%;
+  -vendor-animation-duration: 5s;
+  -vendor-animation-delay: 10s;
+  -vendor-animation-iteration-count: infinite;
+}
+
+.headerCollapse
+{
+  background: #17a2b8;
+  color: white !important;
+  cursor: pointer;
+}
 
 /*   Portfolio   */
 .carousel-inner img,.cardimages {
