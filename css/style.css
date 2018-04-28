@@ -272,6 +272,13 @@ nav.stroke .active {
   height: 100%;
 }
 
+.TomatoBg
+{
+  background-color:tomato; 
+  font-family: tahoma;
+  color: white;
+}
+
 .custom-container .box .detials {
   position: absolute;
   width: 100%;
@@ -475,6 +482,15 @@ nav.stroke .active {
 /* Contact */
 
 /*  modals */
+.modelTitle
+{
+  color: black !important;
+}
+
+.floatRight
+{
+  float: right;
+}
 
 .coupon-modal
 {
