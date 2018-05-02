@@ -1,13 +1,16 @@
 $(function () {
     //carousel
-    var owl = $(".owl-carousel").owlCarousel({
+    let owl = $('.owl-carousel');
+    owl.on('initialized.owl.carousel', function (event) {
+        setAnimation(event,'animated-customin rollIn');
+    });
+    owl.owlCarousel({
         loop: true,
         items: 1,
         nav: true,
-        loop: true,
         autoplay: true,
         animateOut: 'slideOutDown',
-        animateIn: 'flipInX',
+        animateIn: 'bounceInRight',
         navSpeed:500,
         smartSpeed: 450,
         autoplayTimeout: 5000,
@@ -16,22 +19,17 @@ $(function () {
         // navText:['<img width="50" height="50"  src="./images/carousel-arrow-left.png">','<img width="50" height="50" src="./images/carousel-arrow-right.png">']
     });
 
-    function carouselChanges(event) {
-        // $('#captionDiv').removeClass('bounce');
-        // $('#captionDiv').addClass('');
-        console.log(event);
-        var currentItem = $('.owl-item', owl).eq(event.item.index);
-        $('#captionDiv').addClass('py-10 text-info animated lightSpeedIn HC');
-    }
-
-    owl.on('change.owl.carousel', function (event) {
-        const animationEndEvent = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-        // var currentItem = $('.owl-item', owl).eq(event.item.index);
-        var currentItem = $('#captionDiv');
-        currentItem.addClass('bounce animated').one(animationEndEvent, function () {
-            currentItem.removeClass('bounce'); // remove animate.css Class at the end of the animations
-        });
+    owl.on('changed.owl.carousel', function (event) {
+        setAnimation(event,'animated-customin rollIn');
     });
+
+    function setAnimation(event, animation) {
+        const animationEndEvent = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        let currentItem = $('.owl-item', owl).eq(event.item.index).find('h3');       
+        $(currentItem[0]).addClass('animated ' + animation).one(animationEndEvent, function () {
+            $(currentItem[0]).removeClass('animated ' + animation); // remove animate.css Class at the end of the animations
+        });
+    }
 
     //smooth scroll
     $('body').scrollspy({
@@ -59,10 +57,10 @@ $(function () {
 
     //Navbar Toggle button animation
     $('.navbar-toggler').on('click', function () {
-        $('.animated-icon').toggleClass('open');
+        $('.animation-icon').toggleClass('open');
     });
     $('.nav-link').on('click', function () {
-        $('.animated-icon').toggleClass('open');
+        $('.animation-icon').toggleClass('open');
     });
 
     //scroll event
@@ -75,5 +73,5 @@ $(function () {
             $('#nav').addClass('navbar-custom');
             $('#nav').removeClass('bg-dark');
         }
-    });
+    });    
 });
