@@ -24,7 +24,7 @@ function SetTypeWriter(obj)
 function goToContact()
 {
     setTimeout(function(){
-        window.location.href = "home.html#contact"
+        SmoothScrollTo('contact',1000);
     },500); 
 }
 
@@ -53,6 +53,7 @@ function toggleIcon(e) {
 }
 
 function SmoothScrollTo(id_or_Name, timelength){
+ console.log('id:'+id_or_Name);
     var timelength = timelength || 1000;
     $('html, body').animate({
         scrollTop: $("#"+id_or_Name).offset().top-70
