@@ -35,7 +35,19 @@ h6 {
 }
 
 .home-caption {
+  z-index: 5;
+  padding: 15px;
   color: white !important;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .5;
+  background: #1C1D21;
 }
 
 .owl-carousel {
@@ -62,6 +74,20 @@ h6 {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+/* custon animation */
+
+.animated-customIn{
+  -webkit-animation-duration : 3s  ;
+  animation-duration : 3s  ;
+
+  -webkit-animation-delay : 500ms  ;
+  animation-delay : 500ms  ;
+}
+
+.animated-customOut {
+  -webkit-animation-delay : 0ms  ;
+  animation-delay : 0ms  ;
 }
 /* -- section  -- */
 
@@ -153,7 +179,7 @@ nav.stroke .active {
   outline: none;
 }
 
-.animated-icon {
+.animation-icon {
   width: 30px;
   height: 20px;
   position: relative;
@@ -169,7 +195,7 @@ nav.stroke .active {
   cursor: pointer;
 }
 
-.animated-icon span {
+.animation-icon span {
   display: block;
   position: absolute;
   height: 3px;
@@ -187,11 +213,11 @@ nav.stroke .active {
   transition: .25s ease-in-out;
 }
 
-.animated-icon span {
+.animation-icon span {
   background: #aaa;
 }
 
-.animated-icon span:nth-child(1) {
+.animation-icon span:nth-child(1) {
   top: 0px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
@@ -199,7 +225,7 @@ nav.stroke .active {
   transform-origin: left center;
 }
 
-.animated-icon span:nth-child(2) {
+.animation-icon span:nth-child(2) {
   top: 10px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
@@ -207,7 +233,7 @@ nav.stroke .active {
   transform-origin: left center;
 }
 
-.animated-icon span:nth-child(3) {
+.animation-icon span:nth-child(3) {
   top: 20px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
@@ -215,7 +241,7 @@ nav.stroke .active {
   transform-origin: left center;
 }
 
-.animated-icon.open span:nth-child(1) {
+.animation-icon.open span:nth-child(1) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
@@ -224,12 +250,12 @@ nav.stroke .active {
   left: 8px;
 }
 
-.animated-icon.open span:nth-child(2) {
+.animation-icon.open span:nth-child(2) {
   width: 0%;
   opacity: 0;
 }
 
-.animated-icon.open span:nth-child(3) {
+.animation-icon.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
@@ -504,13 +530,13 @@ nav.stroke .active {
   border: 5px dotted #bbb;
   margin: 0 auto;
 }
-.modalContactUs
+/* .modalContactUs
 {
   margin-left: 5%;
   -vendor-animation-duration: 5s;
   -vendor-animation-delay: 10s;
   -vendor-animation-iteration-count: infinite;
-}
+} */
 
 .headerCollapse
 {
@@ -524,7 +550,6 @@ nav.stroke .active {
   width: 100%;
   height: 100%;
 }
-
 
 .cpp-plan dl dt {
     width: 44%;
