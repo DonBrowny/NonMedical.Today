@@ -3,24 +3,27 @@ var typeText="";
 var typeObj;
 $(document).ready(function()
 {
-    $('#portfolioSlide').bind('slide.bs.carousel', function (e) {
-        i = 0;
-        typeText = $(this).find('h4').html();
-        typeObj = $(this).find('h4');
-        $(this).find('h4').html('');
-        typeWriter();
+    $('#portfolioSlide').bind('slid.bs.carousel	', function (e) {
+        setTimeout(SetTypeWriter($(this)),100);
     });
-    
-    $('.collapse').on('hidden.bs.collapse', closeCollapse);
-    $('.collapse').on('shown.bs.collapse', openCollapse);
+    SetTypeWriter($('#portfolioSlide'));
     $('.modalContactUs').on('click',goToContact);
 });
+
+function SetTypeWriter(obj)
+{
+    i = 0;
+    typeText = $(obj).find('.active').find('.hidMessage').val();
+    typeObj = $(obj).find('.active').find('p');
+    $(obj).find('.active').find('p').html('');
+    typeWriter();
+}
 
 function goToContact()
 {
     setTimeout(function(){
         window.location.href = "home.html#contact"
-    },1000); 
+    },500); 
 }
 
 function openCollapse(e)
@@ -34,7 +37,7 @@ function closeCollapse(e)
 }
 function typeWriter() {
     if (i < typeText.length) {
-         $(typeObj).html($(typeObj).html() + typeText.charAt(i));
+         $(typeObj).text($(typeObj).text() + typeText.charAt(i));
          i++;
         setTimeout(typeWriter, speed);
   }
