@@ -680,4 +680,64 @@ dd {
 .subHeaderText{
   color: tomato !important;
 }
+/*scroll up */
+element.style {
+  bottom: 17px;
+}
+.ascend .nectar-button.see-through, body.ascend .nectar-button.see-through, .swiper-slide .button a, body.ascend .nectar-button.see-through-2, .ascend .nectar-button, #to-top {
+  border-radius: 0!important;
+  box-shadow: none!important;
+}
+#to-top {
+  display: block;
+  position: fixed;
+  text-align: center;
+  line-height: 12px!important;
+  right: 17px;
+  bottom: -30px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  z-index: 9994;
+  height: 29px;
+  width: 29px;
+  background-color: rgba(0,0,0,0.25);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  -webkit-transition: background-color 0.1s linear;
+  -o-transition: background-color 0.1s linear;
+}
+element.style {
+}
+#to-top i {
+    line-height: 29px!important;
+    width: 29px!important;
+    height: 29px!important;
+    font-size: 14px!important;
+    top: 0px!important;
+    left: 0px!important;
+    text-align: center!important;
+    position: relative;
+    z-index: 10;
+    background-color: transparent!important;
+}
+[class*="fa-"] {
+    display: inline-block;
+    font-size: 16px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    top: -2px;
+    word-spacing: 1px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
 
