@@ -8,6 +8,8 @@ $(document).ready(function()
     });
     SetTypeWriter($('#portfolioSlide'));
     $('.modalContactUs').on('click',goToContact);
+    $('.collapse').on('hidden.bs.collapse', closeCollapse);
+     $('.collapse').on('shown.bs.collapse', openCollapse);
 });
 
 function SetTypeWriter(obj)
@@ -48,4 +50,13 @@ function toggleIcon(e) {
         .prev('.panel-heading')
         .find(".more-less")
         .toggleClass('glyphicon-plus glyphicon-minus');
+}
+
+function SmoothScrollTo(id_or_Name, timelength){
+    var timelength = timelength || 1000;
+    $('html, body').animate({
+        scrollTop: $("#"+id_or_Name).offset().top-70
+    }, timelength, function(){
+        window.location.hash = id_or_Name;
+    });
 }
