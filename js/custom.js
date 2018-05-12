@@ -20,7 +20,7 @@ $(function () {
     });
 
     owl.on('changed.owl.carousel', function (event) {
-        setAnimation(event,'animated-customin rollIn');
+        setAnimation(event,'animated-customin slideInDown');
     });
 
     function setAnimation(event, animation) {

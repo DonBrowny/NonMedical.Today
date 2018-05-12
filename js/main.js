@@ -1,4 +1,4 @@
-var speed = 50; /* The speed/duration of the effect in milliseconds */
+var speed = 25; /* The speed/duration of the effect in milliseconds */
 var typeText="";
 var typeObj;
 $(document).ready(function()
