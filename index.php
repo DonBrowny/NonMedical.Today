@@ -6,7 +6,7 @@
 		$age = $_POST['age'];
 		$optradio = $_POST['optradio'];
 		$from = 'form@nonmedical.byethost24.com'; 
-		$to = 'vikraman.1992@gmail.com'; 
+		$to = 'mguhan.rmd@gmail.com'; 
 		$subject = 'Message from Contact Demo ';
 		
 		$body = "From: $name\n E-Mail: $email\n Age: $age\n Gender: $optradio";
