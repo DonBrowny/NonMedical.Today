@@ -179,6 +179,12 @@ nav.stroke .active {
   outline: none;
 }
 
+.navbar-brand{
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+}
+
 .animation-icon {
   width: 30px;
   height: 20px;
@@ -370,6 +376,9 @@ nav.stroke .active {
   width: 100%;
   height: 100%;
 }
+.logo-name-mobile{
+  display: none;
+}
 
 @media (max-width: 1000px) {
   .custom-container {
@@ -430,6 +439,13 @@ nav.stroke .active {
   }
   .custom-container .box .detials .content{
     padding: 20%;
+  }
+  .logo-name{
+    display: none;
+  }
+
+  .logo-name-mobile{
+    display: inline;
   }
 }
 /*
@@ -972,4 +988,53 @@ element.style {
     text-align: center;
     vertical-align: middle;
     max-width: 100%;
+}
+
+
+/*Contact US*/
+.contact-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr .5fr 3fr 1fr;
+  grid-template-rows: 1fr .5fr .5fr .5fr 3fr 1fr;
+  grid-template-areas: "header header header header" 
+  ". phone-icon phone-content ." 
+  ". mail-icon mail-content ." 
+  ". fax-icon fax-content ." 
+  ". loc-icon loc-content .";
+}
+
+.contact-header{
+  grid-area: header;
+}
+
+.contact-phone-icon{
+  grid-area: phone-icon;
+}
+.contact-mail-icon{
+  grid-area: mail-icon;
+}
+.contact-fax-icon{
+  grid-area: fax-icon;
+}
+.contact-loc-icon{
+  grid-area: loc-icon;
+}
+
+.contact-phone-content{
+  grid-area: phone-content;
+}
+.contact-mail-content{
+  grid-area: mail-content;
+}
+.contact-fax-content{
+  grid-area: fax-content;
+}
+.contact-loc-content{
+  grid-area: loc-content;
+}
+
+.center-align{
+  width: 50%; 
+  margin: 0 auto;
 }
